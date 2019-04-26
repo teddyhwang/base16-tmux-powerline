@@ -6,18 +6,15 @@
 set -g status-interval 1
 
 # Basic status bar colors
-set -g status-fg colour21
-set -g status-bg colour18
+set -g status-style 'fg=colour21,bg=colour18'
 
 # Left side of status bar
-set -g status-left-bg default
-set -g status-left-fg default
+set -g status-left-style 'bg=default,fg=default'
 set -g status-left-length 150
 set -g status-left "#[fg=colour18,bg=colour2,bold] #S #[fg=colour2,bg=colour19,nobold]#[fg=colour21,bg=colour19] #(whoami) #[fg=colour19,bg=colour20]#[fg=colour15,bg=colour20] #I:#P #[fg=colour20,bg=default,nobold]"
 
 # Right side of status bar
-set -g status-right-bg default
-set -g status-right-fg default
+set -g status-right-style 'bg=default,fg=default'
 set -g status-right-length 150
 set -g status-right "#[fg=colour20,bg=default]#[fg=colour15,bg=colour20] %H:%M:%S #[fg=colour19,bg=colour20]#[fg=colour21,bg=colour19] %d-%b-%y #[fg=colour06,bg=colour19]#[fg=colour18,bg=colour06,bold] #H "
 
@@ -26,12 +23,10 @@ set -g window-status-format " #I:#W#F "
 set -g window-status-current-format " #[fg=colour18,bg=colour02] #I:#W#F "
 
 # Current window status
-set -g window-status-current-bg default
-set -g window-status-current-fg default
+set -g window-status-current-style 'bg=default,fg=default'
 
 # Window with activity status
-set -g window-status-activity-bg default # fg and bg are flipped here due to
-set -g window-status-activity-fg default # a bug in tmux
+set -g window-status-activity-style 'bg=default,fg=default'
 
 # Window separator
 set -g window-status-separator ""
@@ -40,12 +35,10 @@ set -g window-status-separator ""
 set -g status-justify centre
 
 # Pane border
-set -g pane-border-bg colour18
-set -g pane-border-fg colour18
+set -g pane-border-style 'bg=colour18,fg=colour18'
 
 # Active pane border
-set -g pane-active-border-bg colour04
-set -g pane-active-border-fg colour04
+set -g pane-active-border-style 'bg=colour04,fg=colour04'
 
 # Pane number indicator
 set -g display-panes-colour default
@@ -56,14 +49,10 @@ set -g clock-mode-colour colour04
 set -g clock-mode-style 12
 
 # Message
-set -g message-bg colour16
-set -g message-fg colour18
+set -g message-style 'bg=colour16,fg=colour18'
 
 # Command message
-set -g message-command-bg colour16
-set -g message-command-fg colour18
+set -g message-command-style 'bg=colour16,fg=colour18'
 
 # Mode
-set -g mode-bg colour19
-set -g mode-fg colour18
-
+set -g mode-style 'bg=colour19,fg=colour18'
