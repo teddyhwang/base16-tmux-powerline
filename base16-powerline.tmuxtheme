@@ -35,10 +35,10 @@ set -g window-status-separator ""
 set -g status-justify centre
 
 # Pane border
-set -g pane-border-style 'bg=colour18,fg=colour18'
+set -g pane-border-style 'bg=default,fg=colour18'
 
 # Active pane border
-set -g pane-active-border-style 'bg=colour04,fg=colour04'
+set -g pane-active-border-style 'bg=default,fg=colour04'
 
 # Pane number indicator
 set -g display-panes-colour default
