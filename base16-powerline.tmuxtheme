@@ -11,12 +11,12 @@ set -g status-style 'fg=colour21,bg=colour18'
 # Left side of status bar
 set -g status-left-style 'bg=default,fg=default'
 set -g status-left-length 150
-set -g status-left "#[fg=colour18,bg=colour2,bold] #S #[fg=colour2,bg=colour19,nobold]#[fg=colour21,bg=colour19] #(whoami) #[fg=colour19,bg=colour20]#[fg=colour15,bg=colour20] #I:#P #[fg=colour20,bg=default,nobold]"
+set -g status-left "#[fg=colour18,bg=colour2,bold] #S #[fg=colour2,bg=colour19,nobold]#[fg=colour21,bg=colour19] #(whoami) #[fg=colour19,bg=colour20]#[fg=colour15,bg=colour20] #I:#P #[fg=colour20,bg=default,nobold] #{pane_current_command} #{simple_git_status}"
 
 # Right side of status bar
 set -g status-right-style 'bg=default,fg=default'
 set -g status-right-length 150
-set -g status-right "#[fg=colour20,bg=default]#[fg=colour15,bg=colour20] %H:%M:%S #[fg=colour19,bg=colour20]#[fg=colour21,bg=colour19] %d-%b-%y #[fg=colour06,bg=colour19]#[fg=colour18,bg=colour06,bold] #H "
+set -g status-right "#{pane_current_path} #[fg=colour20,bg=default]#[fg=colour15,bg=colour20] %H:%M:%S #[fg=colour19,bg=colour20]#[fg=colour21,bg=colour19] %d-%b-%y #[fg=colour06,bg=colour19]#[fg=colour18,bg=colour06,bold] #H "
 
 # Window status
 set -g window-status-format " #I:#W#F "
