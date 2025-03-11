@@ -1,1 +1,0 @@
-set -g status-left "#[fg=colour18,bg=colour2,bold] #S #[fg=colour2,bg=colour9,nobold]#[fg=colour21,bg=colour9] #(whoami) #[fg=colour9,bg=colour20]#[fg=colour15,bg=colour20] #I:#P #[fg=colour20,bg=default,nobold] #{pane_current_command} #{simple_git_status}"
