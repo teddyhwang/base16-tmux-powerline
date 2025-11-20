@@ -56,3 +56,7 @@ set -g message-command-style 'bg=colour16,fg=colour18'
 
 # Mode
 set -g mode-style 'bg=colour19,fg=colour18'
+
+# Dim inactive panes to highlight active pane
+set -g window-style 'bg=colour18,fg=default'
+set -g window-active-style 'bg=color00,fg=default'
