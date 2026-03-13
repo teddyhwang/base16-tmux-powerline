@@ -58,5 +58,5 @@ set -g message-command-style 'bg=colour16,fg=colour18'
 run-shell "~/.tmux/plugins/base16-tmux-powerline/set-mode-style.sh"
 
 # Dim inactive panes to highlight active pane
-set -g window-style 'bg=colour18,fg=default'
-set -g window-active-style 'bg=color00,fg=default'
+set -g window-style 'bg=colour18,fg=colour08'
+set -g window-active-style 'bg=color00,fg=colour07'
